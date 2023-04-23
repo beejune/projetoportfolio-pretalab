@@ -1,0 +1,185 @@
+/* primeiras propriedades: Lembrando que o asterisco pega o site todo*/
+* {
+    /* define a área de margem nos quatro lados do elemento */
+    margin: 0;
+    /* distância entre o conteúdo de um elemento e suas bordas */
+    padding: 0;
+    /* para configurar uma ou mais das propriedades de contorno */
+    outline: 0;
+  }
+  
+  
+  body{
+    /* Definindo a fonte de todo nosso body */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  li {
+    /* retirando as bolinhas das nossas listas */
+    list-style: none;
+  }
+  
+  .header-menu{
+    /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    display: flex;
+    position: fixed; /*Deixa o nosso header fixo*/
+    width: 100%; /*Largura*/
+    padding: 8px; /*Espaçamento dos 4 lados*/
+    padding-bottom: 32px; /*Espaçamento inferior*/
+    padding-top: 32px;/*Espaçamento superior*/
+    height: 20px; /*Altura*/
+    background-color: #07BEB8; /*cor de fundo da nossa barra de navegação*/
+  }
+  
+  .header-menu nav {
+    display: flex; 
+    justify-content: flex-end; /*Colocando no lado direito da pagina*/
+    width: 100%; /*Largura*/
+  }
+  
+  .lista-menu{
+    display: flex;
+    justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
+    width: 50%; /*Largura*/
+    align-items: center; /*Posicionando no centro*/
+  }
+  
+  /*Pegando os itens com tag a de dentro da nossa lista*/
+  .lista-menu li>a {
+    color: #FFF; /*Cor do texto*/
+    font-size: 18px; /*Tamanho da fonte*/
+    text-decoration: inherit; /*tirando o sublinhado*/
+  }
+  
+  .principal{
+    height: 95vh; /*Altura*/
+    display: flex;
+    background-color: #E7D8F7; /*Cor do fundo*/
+  }
+  
+  /* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+  Ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no
+  centro do browser. O container é invisível. */
+  .container {
+    margin-right: auto; /*uma margem automática para todos os lados  */
+    margin-left: auto;
+    margin-top: 75px; /*Margem para cima*/
+    max-width: 960px; /*largura maxima*/
+    padding-right: 10px; /* Espaçamento direito*/
+    padding-left: 10px; /*Espaçamento esquerdo*/
+    width: 100%; /*largura*/
+  }
+  
+  .subcontainer-principal{
+    /*display, flex-direction e justify content são elementos do flexbox que em conjunto, alinham nossos itens*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #imagem_perfil {
+    display: block;
+    margin: 0px auto;
+    width:35%;
+    border-radius: 100%;
+    border-style: dotted;
+    border-color: #7014CC;
+    border-width: 5px; 
+}
+  
+  .nome-completo {
+    font-size: 36px;
+    color: #7014CC;
+    font-weight: 700;
+    height: 50px;
+  }
+  
+  .profissao{
+    color: #A062DD;
+    height: 60PX;
+    font-weight: 700;
+  }
+  
+  .texto-sobre {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  
+  .article-lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .topico-principal {
+    font-size: 30px;
+    color: #7014CC;
+    font-weight: 700;
+  }
+  .lista-definiçao {
+    padding: 32px;
+  }
+  .titulo-definiçao {
+    margin-bottom: 14px; 
+    font-size: 22px;
+    color: #482E77;
+    font-weight: 600;
+  }
+  .body-definiçao {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  
+  .lista-item{
+    padding: 32px;
+  }
+  
+  .lista-item ul li {
+    margin-bottom: 32px;
+  }
+  
+  .lista-titulo{
+   margin-bottom: 5px; 
+   font-size: 22px;
+   color: #482E77;
+   font-weight: 600;
+  }
+  
+  .lista-local{
+    font-size: 18px;
+    color: #2F80ED;
+  }
+
+  .lista-descricao {
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  
+  .rodape{
+    background-color: #631DB0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+  #icone_redes {
+    border: 0;
+    margin: 0px auto;
+    height: auto;
+    display: inline-block;
+    width: 50px;
+    margin-right: 12px;
+}
+.tabela-icones {
+  text-align: center;
+  margin-left: 250px;
+  
+}
